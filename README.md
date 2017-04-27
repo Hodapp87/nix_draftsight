@@ -33,7 +33,9 @@ dependencies.
   as described
   [here](http://anderspapitto.com/posts/2015-02-28-deb-installation-nixos.html) or
   [here](https://sandervanderburg.blogspot.fr/2013/09/composing-fhs-compatible-chroot.html).
-- Use patchelf instead of this chroot monstrosity.
+- Use patchelf (like in
+  [adobe-reader](https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/misc/adobe-reader) instead of
+  this chroot monstrosity.
 - Get this into [Nixpkgs](https://nixos.org/nixpkgs/) if possible.
   (Use `requireFile` like
   [this](https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/compilers/oraclejdk/jdk-linux-base.nix#L70)?)
