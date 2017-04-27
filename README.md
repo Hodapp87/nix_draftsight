@@ -7,6 +7,9 @@ This is what I wrote to let me run
 supports Linux experimentally, but it is closed-source and only Fedora
 and Ubuntu binary packages are available.
 
+It does so with Nixpkgs'
+[buildFHSUserEnv](https://nixos.org/nixpkgs/manual/#sec-fhs-environments)
+
 Rough instructions:
 
 1. Download the Ubuntu `.deb` for DraftSight.  (I won't try to link
@@ -26,5 +29,11 @@ dependencies.
 
 ## TODO
 
-- Make this an installable package for `nix-env` and the like.
+- Make this an installable package for `nix-env` and the like, perhaps
+  as described
+  [here](http://anderspapitto.com/posts/2015-02-28-deb-installation-nixos.html) or
+  [here](https://sandervanderburg.blogspot.fr/2013/09/composing-fhs-compatible-chroot.html).
+- Use patchelf instead of this chroot monstrosity.
 - Get this into [Nixpkgs](https://nixos.org/nixpkgs/) if possible.
+  (Use `requireFile` like
+  [this](https://github.com/NixOS/nixpkgs/blob/master/pkgs/development/compilers/oraclejdk/jdk-linux-base.nix#L70)?)
