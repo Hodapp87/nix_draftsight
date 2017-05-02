@@ -1,6 +1,9 @@
 # nix_draftsight
 Nix package for running DraftSight (experimental)
 
+At the moment, this work is also waiting to be merged via
+https://github.com/NixOS/nixpkgs/pull/25441.
+
 This is what I wrote to let me run
 [DraftSight](https://www.3ds.com/products-services/draftsight-cad-software/) on
 [NixOS](https://nixos.org/)/[Nix](https://nixos.org/nix/).  DraftSight
