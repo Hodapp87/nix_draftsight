@@ -1,3 +1,10 @@
+*Later note:* This isn't necessary anymore as it was
+[merged into Nixpkgs](https://github.com/NixOS/nixpkgs/pull/25441/files)!
+Install it like anything else in Nix/NixOS.
+
+However, I leave everything below in case it's still useful for
+anyone.
+
 # nix_draftsight
 Nix package for running DraftSight (experimental)
 
